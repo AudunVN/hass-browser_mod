@@ -58,7 +58,7 @@ export const BrowserModPopupsMixin = (C) =>
         );
       };
 
-      if (cfg.auto_close) {
+      if (cfg.auto_close || cfg.screensaver) {
         this.screensaver_set(open, closePopUp, cfg.time);
       } else {
         open();
